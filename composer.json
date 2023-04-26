@@ -1,5 +1,5 @@
 {
-    "name": "SupportKd/CyxAuthBundle",
+    "name": "supportkd/cyxauthbundle",
     "license": "MIT",
     "type": "symfony-bundle",
     "description": "Cyx custom login bundle with Rest API",
