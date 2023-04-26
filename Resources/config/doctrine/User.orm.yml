@@ -1,0 +1,54 @@
+KolossusD\CyxAuthBundle\Entity\User:
+    type: entity
+    table: user
+    repositoryClass: KolossusD\CyxAuthBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        uniqId:
+            type: integer
+            nullable: true
+            column: uniq_id
+        firstName:
+            type: string
+            nullable: true
+            column: first_name
+        middleName:
+            type: string
+            nullable: true
+            column: middle_name
+        lastName:
+            type: string
+            nullable: true
+            column: last_name
+        phoneNo:
+            type: string
+            nullable: true
+            column: phone_no
+        profileImage:
+            type: string
+            nullable: true
+            column: profile_image
+        createdBy:
+            type: integer
+            nullable: true
+            column: created_by
+        modifiedBy:
+            type: integer
+            nullable: true
+            column: modified_by
+        createdAt:
+            type: date
+            length: '100'
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: date
+            length: '100'
+            nullable: true
+            column: updated_at
+    lifecycleCallbacks: {  }

@@ -1,0 +1,6 @@
+#cyx_auth_homepage:
+#    path:     /
+#    defaults: { _controller: CyxAuthBundle:Default:index }
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

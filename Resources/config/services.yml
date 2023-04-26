@@ -1,0 +1,11 @@
+
+services:
+#    cyx_auth.example:
+#        class: KolossusD\CyxAuthBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    cyx_auth.restmailer:
+        class: KolossusD\CyxAuthBundle\Mailer\RestMailer
+        arguments: ['@mailer', '@router', '@twig', { template: { confirmation: %fos_user.registration.confirmation.template%, resetting: %fos_user.resetting.email.template% }, from_email: { confirmation: %fos_user.registration.confirmation.from_email%, resetting: %fos_user.resetting.email.from_email% } }]
+    app.controller.exception:
+        class: KolossusD\CyxAuthBundle\Controller\CustomExceptionController
+        arguments: ['@twig', '%kernel.debug%', '%exception_email%', '%mailer_user%']

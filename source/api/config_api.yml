@@ -1,0 +1,82 @@
+services:
+#    cyx_auth.example:
+#        class: KolossusD\CyxAuthBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    app.controller.exception:
+        class: KolossusD\CyxAuthBundle\Controller\CustomExceptionController
+        arguments: ['@twig', '%kernel.debug%', '%exception_email%', '%mailer_user%']
+
+# Configer you FOS bundle
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: KolossusD\CyxAuthBundle\Entity\User
+    from_email:
+        address:        support@kolossusdigital.com.au
+        sender_name:    Sanjay Bharti
+    registration:
+        form:
+            type: KolossusD\CyxAuthBundle\Form\RegistrationType
+        confirmation:
+            enabled: true
+            template: Auth/Emails/registration.html.twig
+            # if you are using Symfony < 2.8 you should use the type name instead
+            # type: app_user_registration
+    resetting:
+        email:
+            template: Auth/Emails/password_resetting.html.twig
+
+# Nelmio CORS
+nelmio_cors:
+    defaults:
+        allow_origin:  ["%cors_allow_origin%"]
+        allow_methods: ["POST", "PUT", "GET", "DELETE", "OPTIONS"]
+        allow_headers: ["content-type", "authorization"]
+        max_age:       3600
+    paths:
+        '^/': ~
+
+
+# Nelmio API Doc
+nelmio_api_doc: ~
+
+
+# FOS REST Bundle
+fos_rest:
+    body_listener: true
+    param_fetcher_listener: force
+    format_listener:
+        enabled: true
+        rules:
+            - { path: ^/api/, priorities: [ json ], fallback_format: json, prefer_extension: true }
+            - { path: ^/, priorities: [ html ], fallback_format: html, prefer_extension: true }
+    view:
+        view_response_listener: 'force'
+        formats:
+            json: true
+            xml: false
+            rss: false
+        mime_types:
+            json: ['application/json', 'application/x-json']
+    routing_loader:
+        default_format:  json
+        include_format:  false
+    exception:
+        enabled: true
+
+
+#JMS Serializer
+jms_serializer: ~
+
+
+# CSA Guzzle
+csa_guzzle:
+    profiler: "%kernel.debug%"
+
+
+# Lexik JWT Bundle
+lexik_jwt_authentication:
+    private_key_path: "%jwt_private_key_path%"
+    public_key_path:  "%jwt_public_key_path%"
+    pass_phrase:      "%jwt_key_pass_phrase%"
+    token_ttl:        "%jwt_token_ttl%"
