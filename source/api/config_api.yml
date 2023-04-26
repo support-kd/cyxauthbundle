@@ -1,22 +1,22 @@
 services:
 #    cyx_auth.example:
-#        class: KolossusD\CyxAuthBundle\Example
+#        class: SupportKd\CyxAuthBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
     app.controller.exception:
-        class: KolossusD\CyxAuthBundle\Controller\CustomExceptionController
+        class: SupportKd\CyxAuthBundle\Controller\CustomExceptionController
         arguments: ['@twig', '%kernel.debug%', '%exception_email%', '%mailer_user%']
 
 # Configer you FOS bundle
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
-    user_class: KolossusD\CyxAuthBundle\Entity\User
+    user_class: SupportKd\CyxAuthBundle\Entity\User
     from_email:
         address:        support@kolossusdigital.com.au
         sender_name:    Sanjay Bharti
     registration:
         form:
-            type: KolossusD\CyxAuthBundle\Form\RegistrationType
+            type: SupportKd\CyxAuthBundle\Form\RegistrationType
         confirmation:
             enabled: true
             template: Auth/Emails/registration.html.twig

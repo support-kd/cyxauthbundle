@@ -6,7 +6,7 @@
  * Time: 4:03 AM
  */
 
-namespace KolossusD\CyxAuthBundle\Controller;
+namespace SupportKd\CyxAuthBundle\Controller;
 
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Event\FormEvent;

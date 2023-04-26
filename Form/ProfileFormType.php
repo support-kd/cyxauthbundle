@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace KolossusD\CyxAuthBundle\Form;
+namespace SupportKd\CyxAuthBundle\Form;
 
 use Captcha\Bundle\CaptchaBundle\Form\Type\CaptchaType;
 use FOS\UserBundle\Util\LegacyFormHelper;
@@ -55,7 +55,7 @@ class ProfileFormType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'KolossusD\CyxAuthBundle\Entity\User',
+            'data_class' => 'SupportKd\CyxAuthBundle\Entity\User',
             'csrf_token_id' => 'profile',
             // BC for SF < 2.8
             'intention' => 'profile',

@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle\DependencyInjection;
+namespace SupportKd\CyxAuthBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

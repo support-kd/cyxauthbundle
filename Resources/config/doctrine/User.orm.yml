@@ -1,7 +1,7 @@
-KolossusD\CyxAuthBundle\Entity\User:
+SupportKd\CyxAuthBundle\Entity\User:
     type: entity
     table: user
-    repositoryClass: KolossusD\CyxAuthBundle\Repository\UserRepository
+    repositoryClass: SupportKd\CyxAuthBundle\Repository\UserRepository
     id:
         id:
             type: integer

@@ -6,7 +6,7 @@
  * Time: 9:59 AM
  */
 
-namespace KolossusD\CyxAuthBundle\Controller;
+namespace SupportKd\CyxAuthBundle\Controller;
 
 
 use Swift_Mailer;

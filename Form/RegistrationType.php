@@ -1,7 +1,7 @@
 <?php
 // src/AppBundle/Form/RegistrationType.php
 
-namespace KolossusD\CyxAuthBundle\Form;
+namespace SupportKd\CyxAuthBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

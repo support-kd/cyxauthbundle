@@ -9,22 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace KolossusD\CyxAuthBundle\Controller;
+namespace SupportKd\CyxAuthBundle\Controller;
 
 use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\Event\GetResponseUserEvent;
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Model\UserInterface;
-use KolossusD\CyxAuthBundle\Form\ResettingType;
-use KolossusD\CyxSendgridBundle\Util\SendGridUtil;
+use SupportKd\CyxAuthBundle\Form\ResettingType;
+use SupportKd\CyxSendgridBundle\Util\SendGridUtil;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FOS\UserBundle\Controller\ResettingController as BaseController;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use KolossusD\CyxPostMarkBundle\Model\PostMarkModel;
+use SupportKd\CyxPostMarkBundle\Model\PostMarkModel;
 
 /**
  * Controller managing the resetting of the password

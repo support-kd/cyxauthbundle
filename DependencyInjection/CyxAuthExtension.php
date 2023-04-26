@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle\DependencyInjection;
+namespace SupportKd\CyxAuthBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle\Tests\Controller;
+namespace SupportKd\CyxAuthBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

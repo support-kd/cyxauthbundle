@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle\Mailer;
+namespace SupportKd\CyxAuthBundle\Mailer;
 
 use FOS\UserBundle\Mailer\MailerInterface;
 use FOS\UserBundle\Model\UserInterface;

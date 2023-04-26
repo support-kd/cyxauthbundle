@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle\Repository;
+namespace SupportKd\CyxAuthBundle\Repository;
 
 /**
  * UserRepository
