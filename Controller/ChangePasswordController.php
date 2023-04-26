@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace KolossusD\CyxAuthBundle\Controller;
+namespace SupportKd\CyxAuthBundle\Controller;
 
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Event\FormEvent;
@@ -25,7 +25,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
-use KolossusD\CyxAuthBundle\Form\ChangePasswordFormType;
+use SupportKd\CyxAuthBundle\Form\ChangePasswordFormType;
 
 /**
  * Controller managing the password change.

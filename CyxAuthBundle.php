@@ -1,6 +1,6 @@
 <?php
 
-namespace KolossusD\CyxAuthBundle;
+namespace SupportKd\CyxAuthBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -26,7 +26,7 @@
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
-            new KolossusD\CyxAuthBundle\CyxAuthBundle(),
+            new SupportKd\CyxAuthBundle\CyxAuthBundle(),
 		]
 			
 	if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
@@ -50,13 +50,13 @@ nelmio_cors:
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
-    user_class: KolossusD\CyxAuthBundle\Entity\User
+    user_class: SupportKd\CyxAuthBundle\Entity\User
     from_email:
         address:        "%sender_email%"
         sender_name:    Sanjay Bharti
     registration:
         form:
-            type: KolossusD\CyxAuthBundle\Form\RegistrationType
+            type: SupportKd\CyxAuthBundle\Form\RegistrationType
         confirmation:
             enabled: true
             template: Auth/Emails/registration.html.twig

@@ -6,13 +6,13 @@
  * Time: 1:43 PM
  */
 
-namespace KolossusD\CyxAuthBundle\Controller;
+namespace SupportKd\CyxAuthBundle\Controller;
 
 
 use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Model\UserInterface;
 use FOS\UserBundle\Util\TokenGeneratorInterface;
-use KolossusD\CyxSendgridBundle\Util\SendGridUtil;
+use SupportKd\CyxSendgridBundle\Util\SendGridUtil;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -28,7 +28,7 @@ use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\Event\GetResponseNullableUserEvent;
 use FOS\UserBundle\Event\GetResponseUserEvent;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
-use KolossusD\CyxPostMarkBundle\Model\PostMarkModel;
+use SupportKd\CyxPostMarkBundle\Model\PostMarkModel;
 
 /**
  * @RouteResource("api/login", pluralize=false)

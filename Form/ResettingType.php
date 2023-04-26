@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace KolossusD\CyxAuthBundle\Form;
+namespace SupportKd\CyxAuthBundle\Form;
 
 use FOS\UserBundle\Util\LegacyFormHelper;
 use Symfony\Component\Form\AbstractType;
